@@ -31,9 +31,22 @@ const handleOnMove = (e) => {
         image.animate(image{
             objectPosition: `${100 + nextPercentage}% center`,
         },
-        {
-            duration: 1200, fill: 'forwards' }
-            );
-        }
+        { duration: 1200, fill: 'forwards' }
+        );
     }
-}
+};
+
+
+window.onmousedown = (e) => handleOnDown(e);
+
+window.ontouchstart = (e) => handleOnDown(e.touches[0]);
+
+window.onmouseup = (e) => handleOnUp(e);
+
+window.ontouchend = (e) => handleOnUp(e.touches[0]);
+
+window.onmousemove = (e) => handleOnMove(e);
+
+window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+
+
