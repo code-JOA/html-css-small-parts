@@ -26,4 +26,10 @@ const handleOnMove = (e) => {
         },
         {duration: 1200, fill: 'forwards'}
     );
+
+    for (const image of track.getElementsByClassName("image")) {
+        image.animate(image{
+            objectPosition: ``
+        })
+    }
 }
