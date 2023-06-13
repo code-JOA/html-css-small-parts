@@ -14,7 +14,7 @@
 //     maxDelta = window.innerWidth / 2;
 
 //     const percentage = (mouseDelta / maxDelta) * -100,
-//     nextPercentageUnconstrained = 
+//     nextPercentageUnconstrained =
 //     parseFloat(track.dataset.prevPercentage) + percentage,
 //     nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
@@ -36,7 +36,6 @@
 //     }
 // };
 
-
 // window.onmousedown = (e) => handleOnDown(e);
 
 // window.ontouchstart = (e) => handleOnDown(e.touches[0]);
@@ -48,7 +47,6 @@
 // window.onmousemove = (e) => handleOnMove(e);
 
 // window.ontouchmove = (e) => handleOnMove(e.touches[0]);
-
 
 const track = document.getElementById("image-track");
 
