@@ -1,4 +1,14 @@
 body{
     height: 100vh;
-    wi
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50
 }
