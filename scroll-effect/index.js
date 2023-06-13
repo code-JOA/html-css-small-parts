@@ -8,5 +8,8 @@ const handleOnUp = (e) => {
 };
 
 const handleOnMove = (e) => {
-    if (track.dataset.mouse)
+    if (track.dataset.mouseDownAt === '0') return;
+
+    const mouseDelta = parseFLoat(track.dataset.mouseDownAt) - e.clientX,
+    maxDelta = window.innerWidth
 }
